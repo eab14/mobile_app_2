@@ -3,7 +3,7 @@
     "concurrently": "^8.2.2"
   },
   "scripts": {
-    "start": "concurrently \"cd server && rails server\" \" cd client && npx expo start\"",
+    "start": "concurrently \"cd server && rails server\" \" cd client && npx expo start --port=3000\"",
     "server-install-all": "cd server && bundle install",
     "client-install": "cd client && npm install",
     "seeds": "cd server && rails db:seeds",
