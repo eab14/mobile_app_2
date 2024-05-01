@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "scripts": {
+    "start": "concurrently \"cd server && rails server\" \" cd client && npx expo start\"",
+    "server-install-all": "cd server && bundle install",
+    "client-install": "cd client && npm install",
+    "seeds": "cd server && rails db:seeds",
+    "install": "npm run server-install-all && npm run client-install"
+  }
+}
